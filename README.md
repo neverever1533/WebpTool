@@ -46,9 +46,9 @@ libwebp是Google官方开发的webp库，用于各种图片文件（png, jpg, gi
 
 编辑inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态webp文件路径复制进txt文件中（多个文件换行保存），然后双击webptool_webpinfo.bat文件就能批查看静态webp所含frame信息，可手动将对应动态webp的frame数量存进inWebpmuxFrames.txt。
 
-* webpmux2webp.bat（处理动态webp）：
+* webpmux2frame.bat（处理动态webp）：
 
-编辑inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态webp文件路径复制进txt文件中（多个文件换行保存），配合inwebpmuxFrames.txt的frame帧数，然后双击webptool_webpmux2webp.bat文件就能批处理动态webp，并将每一帧图转换成png图片，以便后续合成gif文件。
+编辑inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态webp文件路径复制进txt文件中（多个文件换行保存），配合inwebpmuxFrames.txt的frame帧数，然后双击webptool_webpmux2frame.bat文件就能批处理动态webp，并将每一帧图转换成png图片，以便后续合成gif文件。
 
 ## 许可（License）：
 
