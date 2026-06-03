@@ -22,8 +22,8 @@ goto hold
 :load
 for /f "delims=*" %%i in (inWebpmuxFiles.txt) do (
     if exist %%i (
+        webpinfo -summary %%i
         echo %%i
-        webpinfo -quiet -summary %%i
     )
     if not exist %%i (
         echo %%i does not exist
