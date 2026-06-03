@@ -1,38 +1,38 @@
-@ECHO OFF
-IF EXIST dwebp.exe GOTO ready
-@ECHO OFF
-IF NOT EXIST dwebp.exe GOTO alert0
+@echo off
+if exist dwebp.exe goto ready
+@echo off
+if not exist dwebp.exe goto alert0
 
 :alert0
-ECHO dwebp.exe DOES NOT EXIST
-GOTO hold
+echo dwebp.exe does not exist
+goto hold
 
 :ready
-@ECHO OFF
-IF EXIST inWebpFiles.txt GOTO load
-@ECHO OFF
-IF NOT EXIST inWebpFiles.txt GOTO alert1
+@echo off
+if exist inWebpFiles.txt goto load
+@echo off
+if not exist inWebpFiles.txt goto alert1
 
 :alert1
-ECHO inWebpFiles.txt DOES NOT EXIST
-ECHO D:\1.webp > inWebpFiles.txt
-ECHO D:\2.webp >> inWebpFiles.txt
-GOTO hold
+echo inWebpFiles.txt does not exist
+echo d:\1.webp > inWebpFiles.txt
+echo d:\2.webp >> inWebpFiles.txt
+goto hold
 
 :load
 for /f "delims=*" %%i in (inWebpFiles.txt) do (
-    IF EXIST %%i (
+    if exist %%i (
         dwebp "%%i" -o "%%i.png"
     )
-    IF NOT EXIST %%i (
-        ECHO %%i DOES NOT EXIST
-        GOTO hold
+    if not exist %%i (
+        echo %%i does not exist
+        goto hold
     )
 )
 
 :hold
-ECHO Touch any key to continue.
-PAUSE
+echo Touch any key to continue.
+pause
 
 :end
-EXIT
+exit
