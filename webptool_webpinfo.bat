@@ -16,7 +16,6 @@ if not exist inWebpmuxFiles.txt goto alert1
 :alert1
 echo inWebpmuxFiles.txt does not exist
 echo d:\1.webp > inWebpmuxFiles.txt
-echo d:\2.webp >> inWebpmuxFiles.txt
 goto hold
 
 :load
