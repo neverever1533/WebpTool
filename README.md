@@ -35,7 +35,7 @@ libwebp是Google官方开发的webp库，用于各种图片文件（png, jpg, gi
 
 ## 用法（Usage）：
 
-获取本项目bat文件（适用于Windows平台），放置于libwebp库（下载并解压到硬盘）的bin文件目录，即置于包含dwebp.exe等执行文件的文件夹内，使用相对于的功能时双击bat文件即可。
+获取本项目bat文件（适用于Windows平台），放置于libwebp库（下载并解压到硬盘）的bin文件目录，即置于包含dwebp.exe等执行文件的文件夹内，使用相对应的功能时双击bat文件即可。
 
 例：
 * webp to png：
