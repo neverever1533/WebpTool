@@ -1,13 +1,14 @@
+:check0
 @echo off
 if not exist dwebp.exe goto alert0
 @echo off
-if exist dwebp.exe goto ready
+if exist dwebp.exe goto check1
 
 :alert0
 echo dwebp.exe does not exist.
 goto hold
 
-:ready
+:check1
 @echo off
 if not exist inWebpFiles.txt goto alert1
 @echo off
@@ -23,13 +24,14 @@ goto hold
 for /f "delims=*" %%i in (inWebpFiles.txt) do (
     if not exist %%i (
         echo %%i does not exist.
-        goto hold
+        goto continue
     )
     if exist %%i (
         dwebp "%%i" -o "%%i.png"
         ::echo WEBP has been converted into a PNG, the webp file has been removed.
         del %%i
     )
+    :continue
 )
 
 :hold
