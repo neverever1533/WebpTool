@@ -27,7 +27,7 @@ for /f "skip=0 delims=*" %%i in (inWebpmuxFiles.txt) do (
         goto continue
     )
     if exist %%i (
-        webpinfo -summary %%i
+        webpinfo -summary "%%i"
         echo %%i
     )
     :continue
