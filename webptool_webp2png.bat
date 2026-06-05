@@ -1,4 +1,6 @@
-:check0
+echo webptool_webp2png.bat starts running.
+
+::check0
 @echo off
 if not exist dwebp.exe goto alert0
 @echo off
@@ -24,17 +26,13 @@ goto hold
 for /f "delims=*" %%i in (inWebpFiles.txt) do (
     if not exist %%i (
         echo %%i does not exist.
-        goto continue
     )
     if exist %%i (
         dwebp "%%i" -o "%%i.png"
     )
-    :continue
 )
+goto hold
 
 :hold
-echo Touch any key to continue.
-pause
-
-:end
-exit
+echo webptool_webp2png.bat has been closed.
+::pause
