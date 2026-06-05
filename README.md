@@ -126,7 +126,7 @@ d:\2.webp,10,50
 
 #### webptool_webpmux2frame.bat:
 
-处理inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态\*.webp文件的所有动画图帧存储为\*.webp_0.webp.png，\*.webp_1.webp.png等等（原始\*.webp文件所在文件夹内）。
+处理inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态\*.webp文件的所有动画图帧存储为\*.webp_0.webp.png，\*.webp_1.webp.png等等（原始\*.webp文件所在文件夹内，默认删除提取动画图帧生成的\*.webp_0.webp、\*.webp_1.webp等图片文件）。
 
 ## 许可（License）：
 
