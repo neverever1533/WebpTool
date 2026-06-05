@@ -1,4 +1,6 @@
-:check0
+echo webptool_webpinfo_line.bat starts running.
+
+::check0
 @echo off
 if not exist webpinfo.exe goto alert0
 @echo off
@@ -24,18 +26,16 @@ goto hold
 for /f "skip=0 delims=*" %%i in (inWebpmuxFiles.txt) do (
     if not exist %%i (
         echo %%i does not exist.
-        goto continue
     )
     if exist %%i (
         webpinfo -summary "%%i"
         echo %%i
     )
-    :continue
     goto hold
 )
 
 :hold
-echo Touch any key to continue.
+echo webptool_webpinfo_line.bat has been closed.
 pause
 
 :end
