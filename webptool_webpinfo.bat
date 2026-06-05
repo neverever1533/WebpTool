@@ -32,8 +32,9 @@ for /f "delims=*" %%i in (inWebpmuxFiles.txt) do (
     if exist %%i (
         webpinfo -summary "%%i"
         ::echo %%i
-    )
-) > %%i.txt
+    ) > %%i.txt
+)
+::) > %%i.txt
 goto hold
 
 :hold
