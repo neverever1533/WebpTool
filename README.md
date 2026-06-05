@@ -4,7 +4,7 @@ GUI & bat file for libwebp.
 
 ## libwebp库：
 
-libwebp官方下载链接：[google libwebp download](https://developers.google.cn/speed/webp/docs/precompiled?hl=zh-cn)
+libwebp官方下载链接：[google libwebp](https://developers.google.cn/speed/webp/docs/precompiled?hl=zh-cn)
 
 ## 说明（about）：
 
