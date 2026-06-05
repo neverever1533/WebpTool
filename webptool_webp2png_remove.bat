@@ -1,4 +1,7 @@
-:check0
+echo webptool_webp2png_remove.bat starts running.
+
+::check0
+::echo p0
 @echo off
 if not exist dwebp.exe goto alert0
 @echo off
@@ -9,6 +12,7 @@ echo dwebp.exe does not exist.
 goto hold
 
 :check1
+::echo p1
 @echo off
 if not exist inWebpFiles.txt goto alert1
 @echo off
@@ -21,22 +25,19 @@ echo d:\2.webp >> inWebpFiles.txt
 goto hold
 
 :load
+::echo pload
 for /f "delims=*" %%i in (inWebpFiles.txt) do (
     if not exist %%i (
         echo %%i does not exist.
-        goto continue
     )
     if exist %%i (
         dwebp "%%i" -o "%%i.png"
         ::echo WEBP has been converted into a PNG, the webp file has been removed.
         del %%i
     )
-    :continue
 )
+goto hold
 
 :hold
-echo Touch any key to continue.
-pause
-
-:end
-exit
+echo webptool_webp2png_remove.bat has been closed.
+::pause
