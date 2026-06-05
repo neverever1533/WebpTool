@@ -4,7 +4,7 @@ GUI & bat file for libwebp.
 
 ## libwebp库：
 
-libwebp官方链接：[google libwebp](https://developers.google.cn/speed/webp/docs/precompiled?hl=zh-cn)
+libwebp官方下载链接：[google libwebp download](https://developers.google.cn/speed/webp/docs/precompiled?hl=zh-cn)
 
 ## 说明（about）：
 
@@ -126,7 +126,7 @@ d:\2.webp,10,50
 
 #### webptool_webpmux2frame.bat:
 
-处理inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态*.webp文件的所有动画图帧存储为*.webp_0.webp.png，*.webp_1.webp.png等等（默认同时调用webptool_webpinfo.bat，webptool_webpmux_list.bat和webptool_webp2png_remove.bat）。
+处理inWebpmuxFiles.txt（初次双击运行bat文件自动生成），将待处理的动态*.webp文件的所有动画图帧存储为*.webp_0.webp.png，*.webp_1.webp.png等等。
 
 ## 许可（License）：
 
